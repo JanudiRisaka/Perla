@@ -1,0 +1,98 @@
+h2 {
+  font-size: 50px;
+}
+/*links*/
+a:link, a:visited a:hover, a:active{
+    color: rgb(0, 0, 0);
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+/*content*/
+.Center {
+  text-align: center;
+  max-height: 300px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.subhead {
+  text-align: center;
+  font-family: serif, cursive;
+  font-size: x-large;
+}
+.product {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%; /* Set the width to 100% to ensure they are in one horizontal line */
+  display: flex; /* Make the .NewCollection items horizontal */
+  justify-content: space-between; 
+  column-width: 375px;
+}
+.product1 {
+  flex: 2;/* Distribute available space equally among the items */
+  text-align: center; /* Center align content */
+  padding: 0 2px 0 2px;
+  display: block;
+  width: 100%;
+  margin: 3px;/* Set the width to 100% to ensure they are in one horizontal line */
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+  float: left;
+  border-radius: 10px;
+}
+.intro-section {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 180%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5%;
+  background-repeat:no-repeat; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imageright {
+  width: 50%;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 30px 20px 5%;
+}
+.imageright img {
+  width: 100%;
+}
+.textleft {
+  width: 50%;
+  padding-right: 10%;
+  text-align: center;
+}
+/*view details*/
+.view .intro-section {
+  font-size: small;
+}
+.view {
+  text-align: center;
+}
+.view a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.view a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

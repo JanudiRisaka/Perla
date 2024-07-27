@@ -1,0 +1,114 @@
+body {
+  margin-top: 120px;
+}
+/*Header*/
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+.header a:hover {
+  color: #8f8f8f;
+}
+.header-left, .logo, .header-right {
+  display: flex;
+  align-items: center;
+}
+.header-left a:after {
+  margin-left: 5px; /* Adjust the spacing as needed */
+}
+.header-right a:after {
+  margin-left: 10px; /* Adjust the spacing as needed */
+}
+.dropdown {
+  position: relative;
+  border: none;
+  background-color: white;
+}
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+.dropbtn {
+  font-family: "Times New Roman";
+  font-size: 16px;
+  background-color: white;
+  border: none;
+}
+.dropdown ul {
+  position: absolute;
+  padding-top: 9px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  list-style: none;
+  text-align: center;
+  display: none;
+}
+.dropdown:hover ul,
+.dropdown summary:hover + ul {
+  display: block;
+  background-color: antiquewhite;
+}
+.dropdown ul li {
+  margin: -25px 9px 0 0;
+}
+/* Style the logo */
+.logo {
+  text-align: center;
+}
+.title {
+  font-size: 60px;
+}
+/*links*/
+a:link, a:visited a:hover, a:active{
+  color: rgb(0, 0, 0);
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/*footer*/
+.footer {
+  width: 100%;
+}
+footer .row0 {
+  border-top: #000000;
+  background-color: #000000;
+  margin: -4px -10px 4px 0;
+  padding: 5px 10px 5px 30px;
+  font-size: 20px;
+  min-height: 50px;
+}
+footer .row1 {
+  border-bottom: solid 1px #000000;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 25px 25% 20px 25%;
+  display:flex;
+  align-content: center;
+  gap: 20px;
+}
+footer .row2 {
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 30% 10px 30%;
+  display:flex;
+  align-content: center;
+  gap: 20px;
+}

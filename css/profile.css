@@ -1,0 +1,130 @@
+h2 {
+    font-weight: 450;
+    font-size: 44px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+
+.pcontent {
+    width: 100%;
+    height: 100%;
+} 
+.profile-page {
+    display: flex;
+	justify-content: space-around;
+    padding: 0 0 30px 0;
+}
+.form .deliverystatus, .form .profileInfo {
+    padding: 5px 20px 15px 20px;
+    margin: 10px;
+}
+.images img {
+    float: left;
+    width: 20%;
+}
+.images img:hover {
+    opacity: 0.8;
+}
+.form {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+form form label.input {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+}
+.form form label.input label.placeholder {
+    line-height: 46px;
+    left: 15px;
+    cursor: text;
+    font-size: 18px;
+    color: #000000;
+}
+.form form label.input input {
+    width: 90%;
+    height: 100%;
+    padding: 0 20px 0 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    font-size: 15px;
+    color: #828282;
+}
+.form form label.input.focus label.placeholder {
+    font-size: 9px;
+    line-height: 18px;
+}
+.form > input[type=submit] {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    display: inline;
+}
+.pBtn > input[type=submit]:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+.pBtn input[type="submit"] {
+    background-color: #cc5500;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 30px 5px 30px;
+    font-size: 17px;
+    border: 1px solid #cc5500;
+}
+.form .pBtn {
+    padding: 30px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    display:flex;
+    justify-content: space-around;
+}
+.form .submit  {
+    font-size: 12px;
+    text-decoration: none;
+    padding-left: 3px;
+    background-color: black;
+}
+.form .submit a:hover {
+    text-decoration: underline;
+}
+.error {
+    padding: 7px;
+    font-size:13px;
+}
+span.txtstatus {
+    float: right;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: -59px 0 0 0;
+    gap: 20px;
+}
+h4 span.txtstatus {
+    margin: 0;
+    float: right;
+}
+.deliverystatus {
+    width: 100px;
+}
+.deliverystatus td,tr {
+    margin: 10%;
+    padding: 20px;
+}
+
+.deliverystatus img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

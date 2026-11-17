@@ -6,8 +6,6 @@
 
 A PHP and MySQL web application featuring a pearl jewellery storefront, customer accounts, shopping-cart and order workflows, and an administration area.
 
-![Perla homepage](docs/screenshots/customer/homepage.png)
-
 **Customer Storefront · Shopping Cart · Order Management · Admin Tools**
 
 </div>
@@ -46,7 +44,7 @@ The repository contains PHP application pages, CSS stylesheets, JavaScript files
 - View orders, update delivery status, and delete order records.
 - View the administrator profile.
 
-> **Payment scope:** The cart contains a checkout action that creates order records and clears the cart. The supplied code does not show a payment gateway or online payment processing integration. Do not treat placing an order as proof that payment has been collected.
+> **Payment:** Customers can add products to their cart and place orders through the checkout process. Online payment integration was not implemented, as it was outside the scope of this project.
 
 ## Screenshots
 
@@ -134,7 +132,7 @@ The screenshots below are stored in the repository and show the current applicat
 Perla/
 ├── css/                         # Page and shared stylesheets
 ├── database/
-│   └── perla.sql                # Intended database export (see setup note)
+│   └── perla.sql                # MySQL database export
 ├── docs/
 │   └── screenshots/
 │       ├── customer/            # Storefront and customer-page screenshots
@@ -183,13 +181,27 @@ git clone https://github.com/JanudiRisaka/Perla.git
 
 Move the project folder into the web server document root. With a standard XAMPP installation, this is usually `htdocs`.
 
+For example, after moving the project, the directory structure should look like this:
+
+C:\xampp\htdocs\
+│
+└── Perla\
+
 ### 2. Prepare the database
 
-The application code expects a MySQL database named `perla`. However, **the `database/perla.sql` file in the supplied repository currently contains README Markdown rather than SQL statements**. It cannot be imported as a database dump.
+The application expects a MySQL database named `perla`. A database export is included at `database/perla.sql`.
 
-Before running the application, obtain a valid database export from the original development database, or recreate the schema based on the queries and fields used by the PHP pages. Then import that valid SQL file into a database named `perla`.
+To import it using phpMyAdmin:
 
-The PHP code references tables including `tbluser`, `tbladmin`, `tblproduct`, `tblcart`, `tblorder`, and `tblfaq`. Their complete schema, keys, constraints, and seed data cannot be confirmed from the supplied `perla.sql` file.
+1. Open the XAMPP Control Panel.
+2.Start the Apache and MySQL services by clicking the Start button next to each. Wait until both services are running successfully.
+3. Open [phpMyAdmin](http://localhost/phpmyadmin/).
+4. Create a database named `perla` if it does not already exist.
+5. Select the `perla` database.
+6. Open the **Import** tab.
+7. Choose `database/perla.sql` and click **Import**.
+
+The export contains the application's tables, including `tbluser`, `tbladmin`, `tblproduct`, `tblcart`, `tblorder`, `tblcontain`, and `tblfaq`.
 
 ### 3. Configure the database connection
 
@@ -269,7 +281,7 @@ Code inspection identified areas that need attention:
 
 ## Future Improvements
 
-- Restore and document a valid database export.
+- Keep the database export documented and limited to fictional demonstration data.
 - Improve authentication and session security.
 - Use prepared statements consistently.
 - Add server-side validation and safer file-upload handling.

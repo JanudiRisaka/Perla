@@ -1,0 +1,38 @@
+
+# Environment and configuration
+.env
+.env.*
+!.env.example
+
+# Local database backups
+*.sql.bak
+*.sql.gz
+database/backup/
+
+# Logs
+*.log
+logs/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Dependencies (if introduced later)
+/vendor/
+/node_modules/
+
+# Local development files
+.phpunit.cache/

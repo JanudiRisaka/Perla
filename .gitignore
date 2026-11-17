@@ -36,3 +36,6 @@ desktop.ini
 
 # Local development files
 .phpunit.cache/
+
+# Local database configuration
+/config.php
